@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 2rem;
+
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 5rem;
+}
+h2 {
+  font-size: 3rem;
+}
+
+.nav {
+  width: 85%;
+  margin: auto;
+  padding: 5rem;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav__item:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.nav__item {
+  list-style: none;
+}
+
+.title__container {
+  width: 100vw;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.title__name {
+  letter-spacing: 45px;
+  margin-bottom: 1.5rem;
+}
+
+.title__desc {
+  letter-spacing: 10px;
+  font-weight: light;
+  margin-bottom: 1.5rem;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+}
+
+.exhibit {
+  max-width: 85vw;
+  margin: 2rem;
+  max-height: 90vh;
+}
+
+.hidden {
+  display: none;
+}
+
+a {
+  color: black;
+  display: block;
+}
+
+.insta_logo {
+  font-size: 5rem;
+  cursor: pointer;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 150px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  font-size: 1.3rem;
+
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltiptext--right {
+  top: 10px;
+  left: 130%;
+}
+
+.tooltiptext--left {
+  top: 1px;
+  right: 110%;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
