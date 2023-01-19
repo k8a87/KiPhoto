@@ -60,15 +60,11 @@ h2 {
   margin-bottom: 1.5rem;
 }
 
-.gallery {
-  display: flex;
-  flex-direction: column;
-}
-
 .exhibit {
+  display: block;
   max-width: 85vw;
-  margin: 2rem;
-  max-height: 90vh;
+  margin: 2rem auto;
+  max-height: 95vh;
 }
 
 .hidden {
@@ -77,12 +73,14 @@ h2 {
 
 a {
   color: black;
-  display: block;
 }
 
 .insta_logo {
   font-size: 5rem;
-  cursor: pointer;
+}
+
+.insta_logo :hover {
+  color: #ee618b;
 }
 
 /* Tooltip container */
